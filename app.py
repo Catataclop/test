@@ -10,7 +10,10 @@ st.title('Bonjour !')
 
 df = pd.DataFrame(values, columns=feature_names)
 df
-plot = df('alcohol')
-st.write('Voici le graphique de la teneur en alcool :')
+plot = df['alcohol']
+
+bot = st.checkbox('Voici le graphique de la teneur en alcool :')
+if agree:
+  st.write('Great!')
 st.line_chart(plot)
 
