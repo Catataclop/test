@@ -15,7 +15,7 @@ plot = df['alcohol']
 
 bot = st.checkbox('Voici le graphique de la teneur en alcool :') # création d'un bouton
 
-if agree:
+if bot:
   st.write('Great!')
   st.line_chart(plot)
 
