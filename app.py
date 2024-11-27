@@ -13,9 +13,9 @@ df
 
 plot = df['alcohol']
 
-bot = st.checkbox('Voici le graphique de la teneur en alcool :') # création d'un bouton
+bot = st.checkbox('Afficher le graphique de la teneur en alcool') # création d'un bouton
 
 if bot:
-  st.write('Great!')
+  st.write('Le voici :')
   st.line_chart(plot)
 
