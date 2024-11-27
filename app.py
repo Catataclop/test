@@ -10,10 +10,12 @@ st.title('Bonjour !')
 
 df = pd.DataFrame(values, columns=feature_names)
 df
+
 plot = df['alcohol']
 
-bot = st.checkbox('Voici le graphique de la teneur en alcool :')
+bot = st.checkbox('Voici le graphique de la teneur en alcool :') # création d'un bouton
+
 if agree:
   st.write('Great!')
-st.line_chart(plot)
+  st.line_chart(plot)
 
